@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>Final Grade Calculator</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Exam Grade Calculator</h1>
+        </div>
+
+        <nav> 
+            <ul>
+                <li><a href="#" id="currentPage">What I need to get</a></li>
+                <li><a href="fgae.html">Final grade after exam</a></li>
+            </ul>
+        </nav>
+
+        <div id="mainBody">
+            <p class="question">What is your current grade?</p>
+            <input id="curGrade" class="inputBox" type="text" placeholder="Type a percent here">
+
+            <p class="question">What percent of your final grade is the exam worth?</p>
+            <input id="percentGrade" class="inputBox" type="text" placeholder="Type a percent here">
+
+            <p class="question">What Grade do you want (minimum)?</p>
+            <input id="wantedGrade" class="inputBox" type="text" placeholder="Type a percent here">
+
+            <div>
+                <button onclick="returnBefore()">Submit</button>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --coolPurple: rgb(79, 26, 193); 
+}
+
+body {
+}
+
+#header {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 5px ;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    width: 50%;
+    height: auto;  
+    margin: auto;
+    text-shadow: 1px 1px 1px var(--coolPurple);
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 50%;
+}
+nav ul{
+    align-self: center;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+#currentPage::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: var(--coolPurple);
+    left: 0;
+    bottom: -6px; 
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: var(--coolPurple);
+    left: 0;
+    bottom: -6px; 
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+#mainBody{ 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+    border-color: #000;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.question {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inputBox {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inputBox:focus {
+    outline: none;
+    border-color: rgb(79, 26, 193);
+    box-shadow: 0px 0px 5px rgb(79, 26, 193);
+}
+
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(79, 26, 193);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 2px #000;
+    font-weight: bold;
+}
+
+button:active {
+    animation: clickEffect 0.5s;
+}
+
+@keyframes clickEffect {
+    0% { 
+        transform: scale(1.1); 
+        background-color: green; 
+    }
+    50% { 
+        transform: scale(0.95); 
+        background-color: green; 
+    }
+    100% { 
+        transform: scale(1.1); 
+        background-color: green; 
+    }
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+input {
+    border: 2px solid #000;
+    
+    border-radius: 15px;
+}
+
+
+#result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
