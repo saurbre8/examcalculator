@@ -9,7 +9,12 @@ function returnBefore(){
     let neededGrade = (parseFloat(desiredGrade) - ((1 - adjustedExamPercent) * parseFloat(currentGrade))) / adjustedExamPercent;
     
     neededGrade = neededGrade.toFixed(2);
-    let resultElement = document.createElement("p");
+    let resultElement = document.getElementById("result");
+    //let resultElement = document.createElement("p");
+    if (!resultElement) {
+        resultElement = document.createElement("p");
+        resultElement.id = "result";
+    }
     if (isNaN(neededGrade)) {
         resultElement.textContent = "Please enter valid input.";
     } else if (neededGrade <= 0) {
@@ -18,7 +23,6 @@ function returnBefore(){
     else {
         resultElement.textContent = "You need to score at least a " + neededGrade + "% on your final to get your desired grade.";
     }
-    resultElement.id = "result";
     document.body.appendChild(resultElement);
 }
 
@@ -33,13 +37,16 @@ function returnAfter(){
     let finalGrade = (parseFloat(currentGrade) * (1 - adjustedExamPercent)) + (parseFloat(examGradeGot) * adjustedExamPercent)
     
     finalGrade = finalGrade.toFixed(2);
-    let resultElement = document.createElement("p");
+    let resultElement = document.getElementById("result");
+    if (!resultElement) {
+        resultElement = document.createElement("p");
+        resultElement.id = "result";
+    }
     if (isNaN(finalGrade)) {
         resultElement.textContent = "Please enter valid input.";
     }
     else {
         resultElement.textContent = "You scored a " + finalGrade + "% in the class.";
     }
-    resultElement.id = "result";
     document.body.appendChild(resultElement);
 }
