@@ -23,7 +23,7 @@ function returnBefore(){
     else {
         resultElement.textContent = "You need to score at least a " + neededGrade + "% on your final to get your desired grade.";
     }
-    document.body.appendChild(resultElement);
+    document.getElementById("outputContainer").appendChild(resultElement);
 }
 
 // Does calc for Final Grade After Exam
@@ -48,5 +48,5 @@ function returnAfter(){
     else {
         resultElement.textContent = "You scored a " + finalGrade + "% in the class.";
     }
-    document.body.appendChild(resultElement);
+    document.getElementById("outputContainer").appendChild(resultElement);
 }
