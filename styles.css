@@ -52,6 +52,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    display: inline-block;
 }
 #currentPage::after{
     content: '';
