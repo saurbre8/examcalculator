@@ -18,24 +18,34 @@ body {
     height: auto;  
     margin: auto;
     text-shadow: 1px 1px 1px var(--coolPurple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     text-align: center;
     background-color: white;
-    border-radius: 15px;
-    width: 50%;
 }
 nav ul{
+    display: flex;
     align-self: center;
     align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    padding: 0px;
 }
+
 nav ul li a{
     color: black;
     font-weight: bold;
@@ -64,7 +74,6 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
-
 }
 
 #mainBody{ 
