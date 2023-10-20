@@ -83,6 +83,7 @@ nav ul li a:hover::after{
 
 #mainBody{ 
     font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
     text-align: center;
     position: relative;
     margin: auto;
@@ -93,6 +94,7 @@ nav ul li a:hover::after{
     padding-bottom: 20px;
     width: 50%;
     border: 2px solid black;
+
 }
 
 .question {
@@ -136,25 +138,24 @@ button:active {
 @keyframes clickEffect {
     0% { 
         transform: scale(1.1); 
-        background-color: green; 
     }
     50% { 
-        transform: scale(0.95); 
-        background-color: green; 
+        transform: scale(0.95);   
     }
     100% { 
-        transform: scale(1.1); 
-        background-color: green; 
+        transform: scale(1.1);    
     }
 }
 
 button:hover {
     transform: scale(1.1);
+    background-color: var(--coolPurple);
+    color: white;
 }
+
 
 input {
     border: 2px solid #000;
-    
     border-radius: 15px;
 }
 
@@ -164,4 +165,26 @@ input {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: -41px;
+}
+
+#outputContainer{
+    margin-bottom: 50px;
+}
+
+#explanationBody {
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: #E5E5E5;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.formula{
+    font-style: italic;
 }
