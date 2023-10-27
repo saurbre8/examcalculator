@@ -26,7 +26,6 @@ body {
 }
 
 nav {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,4 +186,24 @@ input {
 
 .formula{
     font-style: italic;
+}
+
+#footerBody {
+    width: auto;
+    background-color: #E5E5E5;
+    padding: 30px;
+    margin: -10px;
+    margin-top: 25px;
+    text-align: center;
+    border-top: 2px solid black;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#footerBody a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
 }
